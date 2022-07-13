@@ -38,5 +38,26 @@ public class L873 {
 
 
     }
+    public int lenLongestFibSubseqOpt(int[] arr) {
+        int n = arr.length;
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < n; i++) {
+            map.put(arr[i], i);
+        }
+        int[][] dp = new int[n][n];
+        int maxLen =0;
+        for (int i = 0; i < n; i++) {
+            for (int j = i+1; j <n ; j++) {
+                int k = arr[j]-arr[i];
+                if (map.containsKey(k) && map.get(k)<i){
+                    dp[i][j] = dp[map.get(k)][i]+1;
+                    maxLen = Math.max(dp[i][j]+2,maxLen);
+                }
+            }
 
+        }
+        return maxLen;
+
+
+    }
 }
