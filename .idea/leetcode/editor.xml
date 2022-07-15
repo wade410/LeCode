@@ -3,6 +3,17 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
+        <entry key="$PROJECT_DIR$/../../LeetCode-editior/leetcode/editor/cn/[735]行星碰撞.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../LeetCode-editior/leetcode/editor/cn/doc/content/[735]行星碰撞.md" />
+              <option name="frontendQuestionId" value="leetcode.cn735" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../LeetCode-editior/leetcode/editor/cn/[735]行星碰撞.java" />
+              <option name="titleSlug" value="asteroid-collision" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../LeetCode-editior/leetcode/editor/cn/[1667]修复表中的名字.java">
           <value>
             <LeetcodeEditor>
@@ -17,10 +28,10 @@
         <entry key="$PROJECT_DIR$/../LeetCode-editior/leetcode/editor/cn/[735]行星碰撞.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/../LeetCode-editior/leetcode/editor/cn/doc/content/[735]行星碰撞.md" />
+              <option name="contentPath" value="$PROJECT_DIR$/../../LeetCode-editior/leetcode/editor/cn/doc/content/[735]行星碰撞.md" />
               <option name="frontendQuestionId" value="leetcode.cn735" />
               <option name="host" value="leetcode.cn" />
-              <option name="path" value="$PROJECT_DIR$/../LeetCode-editior/leetcode/editor/cn/[735]行星碰撞.java" />
+              <option name="path" value="$PROJECT_DIR$/../../LeetCode-editior/leetcode/editor/cn/[735]行星碰撞.java" />
               <option name="titleSlug" value="asteroid-collision" />
             </LeetcodeEditor>
           </value>
