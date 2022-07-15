@@ -9,30 +9,22 @@ import java.util.Stack;
 public class L735 {
     public int[] asteroidCollision(int[] asteroids) {
         Stack<Integer> stack = new Stack<>();
-        for (int i:asteroids ) {
-            if (stack.isEmpty()){
-                stack.push(i);
-            }else {
-                if (stack.peek()*i>0){
-                    stack.push(i);
-                }else {
-                    while (stack.isEmpty()) {
-                        if (Math.abs(stack.peek()) > Math.abs(i)) {
-                            break;
-                        } else {
-                            stack.pop();
-                        }
-                    }
-                    if (stack.isEmpty()) {
-                        stack.push(i);
-                    }
+        for (int i : asteroids) {
+            boolean mark = true;
+            while (!stack.isEmpty() && stack.peek() > 0 && i < 0 && mark) {
+                mark = stack.peek() < -i;
+                if (stack.peek() <= -i) {
+                    stack.pop();
                 }
+            }
+            if (mark) {
+                stack.push(i);
             }
         }
         int[] res = new int[stack.size()];
-        int cnt=0;
-        while (stack.isEmpty()){
-            res[cnt++]=stack.pop();
+        int cnt = 0;
+        while (stack.isEmpty()) {
+            res[cnt++] = stack.pop();
         }
         return res;
     }
