@@ -36,6 +36,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../LeetCode-editior/leetcode/editor/cn/[4]寻找两个正序数组的中位数.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../LeetCode-editior/leetcode/editor/cn/doc/content/[4]寻找两个正序数组的中位数.md" />
+              <option name="frontendQuestionId" value="leetcode.cn4" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../LeetCode-editior/leetcode/editor/cn/[4]寻找两个正序数组的中位数.java" />
+              <option name="titleSlug" value="median-of-two-sorted-arrays" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../LeetCode-editior/leetcode/editor/cn/[735]行星碰撞.java">
           <value>
             <LeetcodeEditor>
@@ -44,6 +55,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/../../LeetCode-editior/leetcode/editor/cn/[735]行星碰撞.java" />
               <option name="titleSlug" value="asteroid-collision" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../LeetCode-editior/leetcode/editor/cn/[749]隔离病毒.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../LeetCode-editior/leetcode/editor/cn/doc/content/[749]隔离病毒.md" />
+              <option name="frontendQuestionId" value="leetcode.cn749" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../LeetCode-editior/leetcode/editor/cn/[749]隔离病毒.java" />
+              <option name="titleSlug" value="contain-virus" />
             </LeetcodeEditor>
           </value>
         </entry>
