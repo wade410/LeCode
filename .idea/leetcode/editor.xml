@@ -3,6 +3,17 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
+        <entry key="$PROJECT_DIR$/../../LeetCode-editior/leetcode/editor/cn/[1260]二维网格迁移.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../LeetCode-editior/leetcode/editor/cn/doc/content/[1260]二维网格迁移.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1260" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../LeetCode-editior/leetcode/editor/cn/[1260]二维网格迁移.java" />
+              <option name="titleSlug" value="shift-2d-grid" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../LeetCode-editior/leetcode/editor/cn/[1]两数之和.java">
           <value>
             <LeetcodeEditor>
