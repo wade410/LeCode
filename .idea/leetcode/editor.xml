@@ -102,6 +102,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../LeetCode-editior/leetcode/editor/cn/[757]设置交集大小至少为2.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../LeetCode-editior/leetcode/editor/cn/doc/content/[757]设置交集大小至少为2.md" />
+              <option name="frontendQuestionId" value="leetcode.cn757" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../LeetCode-editior/leetcode/editor/cn/[757]设置交集大小至少为2.java" />
+              <option name="titleSlug" value="set-intersection-size-at-least-two" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../LeetCode-editior/leetcode/editor/cn/[剑指 Offer II 041]滑动窗口的平均值.java">
           <value>
             <LeetcodeEditor>
