@@ -48,16 +48,27 @@ public class L17 {
             }
 
         }
+    }
+    private static void backtrack1(String digits, List<String> combinations, Map<Character, String> phoneMap, int index, StringBuffer stringBuffer){
+        if (stringBuffer.length()==digits.length()){
+            combinations.add(stringBuffer.toString());
+        }else {
+            char digit = digits.charAt(index);
+            String letter  = phoneMap.get(digit);
+            for (int i = 0; i < letter.length(); i++) {
+                stringBuffer.append(letter.charAt(i));
+                backtrack1(digits, combinations, phoneMap, index+1, stringBuffer);
+                stringBuffer.deleteCharAt(index);
+            }
 
-
-
+        }
 
 
 
     }
 
     public static void main(String[] args) {
-        System.out.println(letterCombinations("23"));
+        System.out.println(letterCombinations("234"));
     }
 
 
