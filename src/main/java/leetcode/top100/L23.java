@@ -5,14 +5,31 @@ package leetcode.top100;
  * @Date 2022/7/28
  **/
 public class L23 {
+    public class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode(int x) {
+            val = x;
+        }
+    }
 
     public static class ListNode {
-      int val;
-      ListNode next;
-      ListNode() {}
-     ListNode(int val) { this.val = val; }
-      ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-  }
+        int val;
+        ListNode next;
+
+        ListNode() {}
+
+        ListNode(int val) {
+            this.val = val;
+        }
+
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
+        }
+    }
     public ListNode mergeKLists(ListNode[] lists) {
         if (lists==null || lists.length<2){
             return lists[0];
