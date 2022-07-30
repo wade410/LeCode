@@ -75,8 +75,11 @@ public class L22 {
         }
 
     }
-
+/*
+    dsf 使用深度优先，但是这里、使用了剪枝操作，这个剪枝呢正好规避了一些非有效括号，比较值得借鉴。
+    最好用的还是回溯，但是回溯的前提是，每一个加入list的str都需要判断是不是有效括号。这里dsf比较有优势，通过right》left就规避掉这个问题
+ */
     public static void main(String[] args) {
-        System.out.println(generateParenthesis(1));
+        System.out.println(generateParenthesisOpt(3));
     }
 }
