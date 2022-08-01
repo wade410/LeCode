@@ -1,88 +1,58 @@
 package leetcode.top100;
 
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.Stack;
-
 /**
  * @Author HuWei05
- * @Date 2022/7/31
+ * @Date 2022/8/1
  **/
 public class L33 {
-    public static int longestValidParenthesesStack(String s) {
-        int len = s.length();
-        Stack<Integer> stack= new Stack();
-        stack.push(-1);
-        int maxLen = 0;
-        for (int i = 0; i < len; i++) {
-            if (s.charAt(i)=='('){
-                stack.push(i);
-            }else {
-                stack.pop();
-                if (stack.isEmpty()){
-                    stack.push(i);
-                }else {
-                    maxLen  = Math.max(maxLen,i-stack.peek());
+    public static int search(int[] nums, int target) {
+        if(nums==null || nums.length==0)
+            return -1;
+        int left =0;
+        int right = nums.length-1;
+        while(left<=right){
+            int mid = left+(right-left)/2;
+            if(nums[mid]==target){
+                return mid;
+            }
+            if(nums[right]>nums[mid]){
+                if(nums[right]>=target && nums[mid]<target){
+                    left = mid+1;
+                }else{
+                    right =mid-1;
+                }
+            }else{
+                if(nums[mid]>target && nums[left]<=target){
+                    right =mid-1;
+                }else{
+                    left = mid+1;
                 }
             }
-        }
-        return maxLen;
-    }
 
-    public static int longestValidParenthesesDouble(String s){
-        int len  =s.length();
-        int left=0;
-        int right=0;
-        int maxLen = 0;
-        for (int i = 0; i < len; i++) {
-            if (s.charAt(i)=='('){
-                left++;
-            }else {
-                right++;
-            }
-            if (left==right){
-                maxLen = Math.max(maxLen,left+right);
-            }
-            if (right>left){
-                left=0;
-                right=0;
-            }
-        }
-        left=right=0;
-        for (int i = len-1; i >0 ; i--) {
-            if (s.charAt(i)==')'){
-                right++;
-            }else {
-                left++;
-            }
-            if (right==left){
-                maxLen = Math.max(maxLen,left+right);
-            }
-            if (left>right){
-                left=right=0;
-            }
+
+            //下面这个却是错的
+            //原因是根据left和right算中间值mid的时候，mid总会王左，比如0和1，显然mid等于0，这时如果比较左边，{3,1}这种情况就会出问题
+//            if(nums[left]<nums[mid]){
+//                if(nums[mid]>target && nums[left]<=target){
+//                    right =mid-1;
+//                }else{
+//                    left = mid+1;
+//                }
+//            }else{
+//                if(nums[right]>=target && nums[mid]<target){
+//                    left = mid+1;
+//                }else{
+//                    right =mid-1;
+//                }
+//            }
+
+
 
         }
-        return maxLen;
-    }
-    public static int longestValidParenthesesDp(String s){
-        int maxans = 0;
-        int[] dp = new int[s.length()];
-        for (int i = 1; i < s.length(); i++) {
-            if (s.charAt(i) == ')') {
-                if (s.charAt(i - 1) == '(') {
-                    dp[i] = (i >= 2 ? dp[i - 2] : 0) + 2;
-                } else if (i - dp[i - 1] > 0 && s.charAt(i - dp[i - 1] - 1) == '(') {
-                    dp[i] = dp[i - 1] + ((i - dp[i - 1]) >= 2 ? dp[i - dp[i - 1] - 2] : 0) + 2;
-                }
-                maxans = Math.max(maxans, dp[i]);
-            }
-        }
-        return maxans;
+        return -1;
     }
 
     public static void main(String[] args) {
-        System.out.println(longestValidParenthesesDouble("(()"));
+        System.out.println(search(new int[]{3,1},1));
     }
-
 }
