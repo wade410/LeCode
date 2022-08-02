@@ -17,7 +17,7 @@ public class L34 {
 
     private int findFirst(int[] nums, int target) {
         int left = 0;
-        int right = nums.length ;
+        int right = nums.length ;//核心还是这个地方，这里预防这种情况1234566
         while (left < right) {
             int mid = left + (right - left) / 2;
             if (nums[mid] >= target) {
@@ -26,6 +26,6 @@ public class L34 {
                 left = mid + 1;
             }
         }
-        return left;
+        return left;//如果有相同的（例如12234，找2），left肯定是最靠左的
     }
 }
