@@ -21,6 +21,7 @@ public class L40 {
     }
 
     private static void backTrace(int[] candidates, int target, List<List<Integer>> res, ArrayList<Integer> list, int sum, int index,boolean[] hasVisited) {
+
         if (sum==target){
             res.add(new ArrayList<>(list));
             return;
@@ -28,6 +29,8 @@ public class L40 {
         if (sum>target)
             return;
         for (int i = index; i < candidates.length; i++) {
+            //这个地方简直太重要了
+            // (i!=0&&candidates[i]==candidates[i-1]如果是这样判断，那么整个回溯会经过数组中的哪些元素
             if (i!=0&&candidates[i]==candidates[i-1]&&!hasVisited[i-1])
                 continue;
             hasVisited[i]=true;
@@ -42,7 +45,8 @@ public class L40 {
     }
 
     public static void main(String[] args) {
-        System.out.println(combinationSum2(new int[]{10,1,2,7,6,1,5},8));
+//        System.out.println(combinationSum2(new int[]{10,1,2,7,6,1,5},8));
+        System.out.println(combinationSum2(new int[]{1,1,2,4},8));
     }
 
 
