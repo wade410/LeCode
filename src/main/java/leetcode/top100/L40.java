@@ -34,6 +34,8 @@ public class L40 {
             if (i!=0&&candidates[i]==candidates[i-1]&&!hasVisited[i-1])
                 continue;
             hasVisited[i]=true;
+
+
             sum+=candidates[i];
             list.add(candidates[i]);
             backTrace(candidates,target,res,list,sum,i+1,hasVisited);
