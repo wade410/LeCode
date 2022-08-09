@@ -30,6 +30,7 @@ public class L46 {
             list.remove(list.size()-1);
             booleans[i]=false;
         }
+
     }
 
     public static void main(String[] args) {
