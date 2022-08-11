@@ -28,6 +28,6 @@ public class KafaKaTest {
         KafkaProducer producer = new KafkaProducer(properties);
 
         ProducerRecord<String,String> record = new ProducerRecord(topic,"Hello World!");
-        producer.send(record,new SzzTestCallBack(record.topic(), record.key(), record.value()));
+//        producer.send(record,new SzzTestCallBack(record.topic(), record.key(), record.value()));
     }
 }
