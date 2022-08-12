@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Queue;
 
 /**
- * @Author HuWei05
+ * @Author HuShengHengao
  * @Date 2022/7/16
  **/
 public class MovingAverage {

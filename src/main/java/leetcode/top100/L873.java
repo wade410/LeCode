@@ -3,7 +3,7 @@ package leetcode.top100;
 import java.util.HashMap;
 
 /**
- * @Author HuWei05
+ * @Author HuShengHengao
  * @Date 2022/7/12
  **/
 public class L873 {

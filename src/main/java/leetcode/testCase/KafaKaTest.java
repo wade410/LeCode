@@ -8,7 +8,7 @@ import org.apache.kafka.common.serialization.StringSerializer;
 import java.util.Properties;
 
 /**
- * @Author HuWei05
+ * @Author HuShengHenGao
  * @Date 2022/8/9
  **/
 public class KafaKaTest {

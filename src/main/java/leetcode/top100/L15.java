@@ -3,7 +3,7 @@ package leetcode.top100;
 import java.util.*;
 
 /**
- * @Author HuWei05
+ * @Author HuShengHenGao
  * @Date 2022/7/24
  **/
 public class L15 {

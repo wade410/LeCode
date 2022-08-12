@@ -1,7 +1,7 @@
 package leetcode.top100;
 
 /**
- * @Author HuWei05
+ * @Author HuShengHenGao
  * @Date 2022/7/23
  **/
 public class L11 {

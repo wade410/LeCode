@@ -1,7 +1,7 @@
 package leetcode.top100;
 
 /**
- * @Author HuWei05
+ * @Author HuShengHengao
  * @Date 2022/8/10
  **/
 public class L48 {

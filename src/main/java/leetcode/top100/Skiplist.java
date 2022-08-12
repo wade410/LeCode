@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.Random;
 
 /**
- * @Author HuWei05
+ * @Author HuShengHengao
  * @Date 2022/7/30
  **/
 class Skiplist {
