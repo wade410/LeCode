@@ -32,6 +32,7 @@ public class L76 {
             }
             r++;
         }
+
         return size == Integer.MAX_VALUE ? "" : s.substring(start, start + size);
     }
 }
