@@ -5,33 +5,41 @@ package leetcode.top100;
  * @Date 2022/8/15
  **/
 public class L76 {
-    public String minWindow(String s, String t) {
-        int[] need =new int[128];
-        for (char c:t.toCharArray())
-            need[c]++;
-        int l=0,r=0;
-        int start =0;
-        int count=t.length();
+    public static String minWindow(String s, String t) {
+        int[] need = new int[128];
+        for (int i = 0; i < t.length(); i++) {
+            need[t.charAt(i)]++;
+        }
+        System.out.println(  need[s.charAt(0)]);
+        int left = 0, right = 0, n = s.length() - 1;
+        int count = t.length();
         int size = Integer.MAX_VALUE;
-        while (r<=s.length()-1){
-            if (need[s.charAt(r)]>0)
+        int start =0;
+        while (right <= n) {
+            if ( need[s.charAt(right)]>0){
                 count--;
-            need[s.charAt(r)]--;
-            if (count ==0){
-                while (l<r&&need[s.charAt(l)]<0){
-                    need[s.charAt(l)]++;
-                    l++;
+            }
+            need[s.charAt(right)]--;
+            if (count == 0) {
+                while (left<right && need[s.charAt(left)]<0) {
+                    need[s.charAt(left)]++;
+                    left++;
                 }
-                if (r-l+1<size){
-                    size=r-l+1;
-                    start=l;
+                if (size > right - left+1) {
+                    size = right - left+1;
+                    start=left;
                 }
-                need[s.charAt(l)]++;
-                l++;
+                need[s.charAt(left)]++;
+                left++;
                 count++;
             }
-            r++;
+            right++;
         }
         return size == Integer.MAX_VALUE ? "" : s.substring(start, start + size);
+    }
+
+    public static void main(String[] args) {
+        String s = "ADOBECODEBANC", t = "ABC";
+        System.out.println(minWindow(s,t));
     }
 }
