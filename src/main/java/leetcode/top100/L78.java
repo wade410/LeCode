@@ -39,10 +39,24 @@ public class L78 {
             list.remove(list.size() - 1);
         }
     }
+    public static void backTracking(int[] nums, List<Integer> list,int sum,int start,int target) {
+        System.out.println(list+"--------------"+sum);
+        if (sum>target){
+            return;
+        }
+
+        for (int i = start; i < nums.length; i++) {
+            list.add(nums[i]);
+            sum+=nums[i];
+            backTracking(nums, list,sum,i,target);
+            list.remove(list.size() - 1);
+            sum-=nums[i];
+        }
+    }
 
     public static void main(String[] args) {
-
-        backTracking(new int[] {1, 2, 3,4,5,6}, new ArrayList<>(), 0);
+        backTracking(new int[] {1, 2, 3}, new ArrayList<>(), 0,0,8);
+//        backTracking(new int[] {1, 2, 3}, new ArrayList<>(), 0);
     }
 
 }
