@@ -41,7 +41,8 @@ public class L78 {
     }
 
     public static void main(String[] args) {
-        backTracking(new int[] {1, 2, 3, 4}, new ArrayList<>(), 0);
+
+        backTracking(new int[] {1, 2, 3,4,5,6}, new ArrayList<>(), 0);
     }
 
 }
